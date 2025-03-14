@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 
 import configparser
-import os
 from pathlib import Path
 import subprocess
+import os
 import shutil
-
-uname = os.uname()
+from sys import platform
 
 root = Path(__file__).parent
 
@@ -15,7 +14,9 @@ subprocess.run([
 ], cwd=root)
 
 def get_profiles_ini():
-    if uname.sysname == 'Darwin':
+    if platform == 'win32':
+        return Path(os.environ['APPDATA'])/'Mozilla'/'Firefox'/'profiles.ini'
+    elif platform == 'darwin':
         return Path('~/Library/Application Support/Firefox/profiles.ini').expanduser()
     else:
         return Path('~/.mozilla/firefox/profiles.ini').expanduser()
