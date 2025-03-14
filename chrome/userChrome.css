@@ -1,0 +1,24 @@
+/* Import your desired components first */
+
+@import url(firefox-csshacks/chrome/button_effect_scale_onclick.css);
+@import url(firefox-csshacks/chrome/blank_page_background.css);
+@import url(firefox-csshacks/chrome/autohide_menubar.css);
+@import url(firefox-csshacks/chrome/hide_toolbox_top_bottom_borders.css);
+@import url(firefox-csshacks/chrome/vertical_context_navigation.css);
+@import url(firefox-csshacks/chrome/minimal_popup_scrollbars.css);
+@import url(firefox-csshacks/chrome/button_effect_icon_glow.css);
+@import url(firefox-csshacks/chrome/dark_context_menus.css);
+@import url(firefox-csshacks/chrome/dark_additional_windows.css);
+@import url(firefox-csshacks/chrome/dark_checkboxes_and_radios.css);
+@import url(firefox-csshacks/chrome/hide_tabs_toolbar_v2.css);
+@import url(firefox-csshacks/chrome/floating_findbar_on_top.css);
+@import url(firefox-csshacks/chrome/round_ui_items.css);
+@import url(firefox-csshacks/chrome/compact_proton.css);
+@import url(firefox-csshacks/chrome/compact_extensions_panel.css);
+@import url(firefox-csshacks/chrome/minimal_text_fields.css);
+
+@import url(pretty-tree-style-tab/userChrome.css);
+
+/* Apply your custom modifications after imports */
+
+@import url(vars.css);
