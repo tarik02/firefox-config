@@ -36,6 +36,7 @@ for section in config.sections():
     else:
         profile_path = Path(config.get(section, 'Path'))
 
+    print(f'Installing to {name} ({profile_path})')
     shutil.rmtree(profile_path / 'chrome', ignore_errors=True)
     shutil.copytree(
         src=str(root / 'chrome') + '/',
