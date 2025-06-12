@@ -22,3 +22,7 @@
 /* Apply your custom modifications after imports */
 
 @import url(vars.css);
+
+.titlebar-buttonbox-container {
+    visibility: visible !important;
+}
